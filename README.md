@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Esta es una aplicación de lista de tareas (To-Do List) desarrollada en React. Permite a los usuarios agregar, marcar como completadas y eliminar tareas. La aplicación está diseñada para ser fácil de usar y tiene una interfaz visualmente atractiva.
 
-Currently, two official plugins are available:
+## Características
+- **Agregar Tareas**: Los usuarios pueden agregar nuevas tareas a la lista.
+- **Marcar como Completadas**: Las tareas pueden ser marcadas como realizadas o no realizadas.
+- **Eliminar Tareas**: Los usuarios pueden eliminar tareas de la lista.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías Utilizadas
+- **React**: Librería de JavaScript para construir interfaces de usuario.
+- **Redux Toolkit**: Para la gestión del estado de la aplicación.
+- **Material-UI**: Para componentes de interfaz de usuario.
 
-## Expanding the ESLint configuration
+## Estructura del Proyecto
+- **src**
+  - **components**
+    - `Encabezado.tsx`: Componente de encabezado de la aplicación.
+    - `FormTarea.tsx`: Formulario para creación y edición de tareas.
+    - `ListaTareas.tsx`: Componente para listar las tareas.
+    - `TodoList.tsx`: Componente principal.
+  - **store**
+    - `thunks.tsx`: Configuración de acciones asíncronas.
+    - `todoSlice.js`: Slice de Redux para la gestión del estado de las tareas.
+  - **App.css**: Estilos de la aplicación.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/pedro0324/todo_list.git
