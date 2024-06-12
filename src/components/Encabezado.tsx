@@ -19,6 +19,10 @@ export const Encabezado = () => {
       <Typography color={"secondary.main"} variant="subtitle1">
         Lista de tareas para demostración
       </Typography>
+      {/* cambios no estables*/}
+      <Typography color={"secondary.main"} variant="subtitle1">
+        Rama con cambios no estables
+      </Typography>
     </Grid>
   );
 };
