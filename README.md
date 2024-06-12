@@ -23,7 +23,7 @@ Esta es una aplicación de lista de tareas (To-Do List) desarrollada en React. P
   - **store**
     - `thunks.tsx`: Configuración de acciones asíncronas.
     - `todoSlice.js`: Slice de Redux para la gestión del estado de las tareas.
-  - **App.css**: Estilos de la aplicación.
+  - **styles.css**: Estilos de la aplicación.
 
 ## Instalación
 
